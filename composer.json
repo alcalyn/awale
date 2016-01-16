@@ -1,0 +1,27 @@
+{
+    "name":         "alcalyn/awale",
+    "license":      "MIT",
+    "type":         "library",
+    "description":  "Awale game PHP implementation",
+    "homepage":     "https://github.com/alcalyn/awale",
+    "keywords":     ["awale", "oware", "game", "php"],
+    "authors": [
+        {
+            "name": "Julien Maulny",
+            "email": "doubjulien@hotmail.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alcalyn\\Awale\\": "src",
+            "Alcalyn\\Awale\\Test\\": "tests"
+        }
+    }
+}
