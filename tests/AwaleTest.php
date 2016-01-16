@@ -9,10 +9,7 @@ class AwaleTest extends \PHPUnit_Framework_TestCase
 {
     public function testCreateWith3Seeds()
     {
-        $awale = Awale::createWithSeedsPerContainer(4);
-
-        echo $awale;
-        exit;
+        $awale = Awale::createWithSeedsPerContainer(3);
 
         $expectedGrid = array(
             array(

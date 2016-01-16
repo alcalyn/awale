@@ -1,6 +1,6 @@
 # Awale
 
-This library provide a PHP implementation of the [Awale (or Oware) game](https://en.wikipedia.org/wiki/Oware).
+This library provides a PHP implementation of the [Awale (or Oware) game](https://en.wikipedia.org/wiki/Oware).
 
 
 ## Installation
@@ -31,7 +31,7 @@ Not using Composer ? [Install it directly](https://github.com/alcalyn/awale/arch
 
 ### Creating an instance
 
-Create an instance of Awale, which is an instance of an Awale board, with seeds.
+Create an instance of Awale, which is an instance of an Awale game state, with seeds.
 
 ``` php
 use Alcalyn\Awale\Awale;
@@ -102,9 +102,11 @@ Array
 
 )
 */
+```
 
 Or to get a graphical representation:
 
+``` php
 echo $awale;
 
 /* Outputs:
@@ -155,7 +157,7 @@ $awale->isGameOver(); // true or false
 // Get winner when game is finished
 $awale->getWinner(); // Awale::PLAYER_0 or Awale::PLAYER_1 or Awale::DRAW or null
 
-// Get seeds in a player attic
+// Get seeds number in a player attic
 $awale->getScore(Awale::PLAYER_1);
 
 // Whether a loop is detected (a same state of the game will appear again and again)
@@ -169,7 +171,7 @@ There is some other methods in the [Awale class](src/Awale.php).
 
 First, update your composer to get phpunit, then run:
 
-``` php
+``` bash
 vendor/bin/phpunit -c .
 ```
 
